@@ -3,9 +3,11 @@
 one:
   store_name: MyString
   store_number: 1
-  last_visit: 2016-08-02
+  last_visit: 2016-08-11
+  smap_given: false
 
 two:
   store_name: MyString
   store_number: 1
-  last_visit: 2016-08-02
+  last_visit: 2016-08-11
+  smap_given: false

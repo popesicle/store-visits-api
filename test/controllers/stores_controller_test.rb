@@ -12,7 +12,7 @@ class StoresControllerTest < ActionDispatch::IntegrationTest
 
   test "should create store" do
     assert_difference('Store.count') do
-      post stores_url, params: { store: { last_visit: @store.last_visit, store_name: @store.store_name, store_number: @store.store_number } }, as: :json
+      post stores_url, params: { store: { last_visit: @store.last_visit, smap_given: @store.smap_given, store_name: @store.store_name, store_number: @store.store_number } }, as: :json
     end
 
     assert_response 201
@@ -24,7 +24,7 @@ class StoresControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update store" do
-    patch store_url(@store), params: { store: { last_visit: @store.last_visit, store_name: @store.store_name, store_number: @store.store_number } }, as: :json
+    patch store_url(@store), params: { store: { last_visit: @store.last_visit, smap_given: @store.smap_given, store_name: @store.store_name, store_number: @store.store_number } }, as: :json
     assert_response 200
   end
 

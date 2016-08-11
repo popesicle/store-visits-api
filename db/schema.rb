@@ -10,12 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160802213016) do
+ActiveRecord::Schema.define(version: 20160811181600) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "stores", force: :cascade do |t|
     t.string   "store_name"
     t.integer  "store_number"
     t.date     "last_visit"
+    t.boolean  "smap_given"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
