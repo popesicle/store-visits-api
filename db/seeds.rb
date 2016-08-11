@@ -1,21 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Store.destroy_all
 store1 = Store.create([
     {
       store_name: "Pasadena",
       store_number: 2066,
-      last_visit: Date.parse('2-8-16'),
+      last_visit: Date.parse('2-8-2016'),
       smap_given: false
     },
     {
       store_name: "Northcross",
       store_number: 2119,
-      last_visit: Date.parse('21-7-16'),
+      last_visit: Date.parse('21-7-2016'),
       smap_given: false
     },
     {
