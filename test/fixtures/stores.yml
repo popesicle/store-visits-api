@@ -4,10 +4,10 @@ one:
   store_name: MyString
   store_number: 1
   last_visit: 2016-08-11
-  smap_given: false
+  smap_given: MyString
 
 two:
   store_name: MyString
   store_number: 1
   last_visit: 2016-08-11
-  smap_given: false
+  smap_given: MyString
