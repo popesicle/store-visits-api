@@ -20,8 +20,9 @@ ActiveRecord::Schema.define(version: 20160811192957) do
     t.integer  "store_number"
     t.date     "last_visit"
     t.string   "smap_given"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.string   "formatted_last_visit"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
 end

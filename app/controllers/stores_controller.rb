@@ -4,7 +4,6 @@ class StoresController < ApplicationController
   # GET /stores
   def index
     @stores = Store.all
-
     render json: @stores
   end
 
@@ -46,6 +45,7 @@ class StoresController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def store_params
-      params.require(:store).permit(:store_name, :store_number, :last_visit, :smap_given)
+      # params.require(:store).permit(:store_name, :store_number, :last_visit, :smap_given)
+      ActiveModelSerializers::Deserialization.jsonapi_parse(params)
     end
 end
